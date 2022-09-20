@@ -1,6 +1,6 @@
 # Dom Manipulation Assignment
 
-1. Webiste Name: [Dev To](https://dev.to/)
+# 1. Website Name: [Dev To](https://dev.to/)
 
 ### Topics
 
@@ -18,6 +18,13 @@
 
 ![Output](./Pic2.png)
 
+## Answer
+```
+document.getElementsByClassName("crayons-subtitle-2 lh-tight mb-4")[1].textContent = "iNeuron";
+document.getElementsByClassName("color-base-70 mb-4")[1].innerText = "I Write Code";
+```
+<hr>
+
 2. Website Name: [Apple](https://support.apple.com/en-in)
 
 ### Task
@@ -30,7 +37,19 @@
 
 ['iPhone', 'Mac', 'iPad', 'Watch', 'AirPods', 'Music', 'TV']
 
-3. Webiste Name: [Youtube Support](https://support.google.com/youtube/)
+## Answer
+```
+let output = [];
+
+for (let i=0; i<document.getElementsByClassName("as-imagegrid-item-title").length; i++){
+    output.push(document.getElementsByClassName("as-imagegrid-item-title")[i].firstChild.data);
+}
+
+console.log(output);
+```
+<hr>
+
+3. Website Name: [Youtube Support](https://support.google.com/youtube/)
 
 ### Topics
 
@@ -48,7 +67,23 @@
 
 ![Output](./Pic5.png)
 
-4. Webiste Name: [OnePlus](https://www.oneplus.in/support)
+## Answer
+```
+let new_section = document.createElement("section");
+new_section.className = "parent";
+
+let new_faq = document.createElement("h3");
+new_faq.innerText = "My New FAQ";
+
+new_section.appendChild(new_faq);
+
+let topics = document.querySelector(".accordion-homepage");
+topics.appendChild(new_section)
+
+```
+<hr>
+
+4. Website Name: [OnePlus](https://www.oneplus.in/support)
 
 ### Topics
 
@@ -66,7 +101,14 @@
 
 ![Output](./Pic7.png)
 
-5. Webiste Name: [Samsung](https://www.samsung.com/in/offer/online/samsung-fest/)
+## Answer
+```
+document.getElementsByClassName("one-tel-number service-number")[0].textContent = "+91 6366256689"
+
+```
+<hr>
+
+5. Website Name: [Samsung](https://www.samsung.com/in/offer/online/samsung-fest/)
 
 ### Topics
 
@@ -84,7 +126,16 @@
 
 ![Output](./Pic9.png)
 
-6. Webiste Name: [Adidas](https://www.adidas.co.in/)
+## Answer
+```
+for (let i=0; i<document.querySelectorAll(".diwali-deals-product-sale-btn").length; i++){
+    document.querySelectorAll(".diwali-deals-product-sale-btn")[i].innerText = "Check out";
+}
+
+```
+<hr>
+
+6. Website Name: [Adidas](https://www.adidas.co.in/)
 
 ### Topics
 
@@ -102,7 +153,20 @@
 
 ![Output](./Pic11.png)
 
-7. Webiste Name: [MDN Web Docs](https://developer.mozilla.org/en-US/)
+## Answer
+```
+let search = document.getElementsByClassName("searchinput___19uW0")[0]
+
+function colorRed() {
+    search.style.backgroundColor = "Red";
+}
+
+search.addEventListener("mouseover", colorRed);
+
+```
+<hr>
+
+7. Website Name: [MDN Web Docs](https://developer.mozilla.org/en-US/)
 
 ### Topics
 
@@ -121,7 +185,7 @@
 
 ![Output](./Pic13.png)
 
-8. Webiste Name: [Google](https://www.google.com/)
+8. Website Name: [Google](https://www.google.com/)
 
 ### Topics
 
@@ -139,7 +203,7 @@
 
 ![Output](./Pic15.png)
 
-9. Webiste Name: [Code Wars](https://www.codewars.com/)
+9. Website Name: [Code Wars](https://www.codewars.com/)
 
 ### Topics
 
@@ -157,7 +221,7 @@
 
 ![Output](./Pic17.png)
 
-10. Webiste Name: [Freecodecamp](https://www.freecodecamp.org/)
+10. Website Name: [Freecodecamp](https://www.freecodecamp.org/)
 
 ### Topics
 
@@ -175,7 +239,7 @@
 
 ![Output](./Pic19.png)
 
-11. Webiste Name: [realme](https://www.realme.com/in/)
+11. Website Name: [realme](https://www.realme.com/in/)
 
 ### Topics
 
@@ -193,7 +257,7 @@
 
 ![Output](./Pic21.png)
 
-12. Webiste Name: [Github](https://github.com/)
+12. Website Name: [Github](https://github.com/)
 
 ### Topics
 
@@ -211,7 +275,7 @@
 
 ![Output](./Pic23.png)
 
-13. Webiste Name: [Hackerrank](https://www.hackerrank.com/)
+13. Website Name: [Hackerrank](https://www.hackerrank.com/)
 
 ### Topics
 
@@ -229,7 +293,7 @@ Target the top description and change “Matching developers with great companie
 
 ![Output](./Pic25.png)
 
-14. Webiste Name: [Asus](https://www.asus.com/in/)
+14. Website Name: [Asus](https://www.asus.com/in/)
 
 ### Topics
 
@@ -247,7 +311,7 @@ Target the top description and change “Matching developers with great companie
 
 ![Output](./Pic27.png)
 
-15. Webiste Name: [Dell](https://www.dell.com/en-in/shop/deals/laptop-deals?gacd=10415953-9016-5761040-285981356-0&dgc=ST&gclid=Cj0KCQjwguGYBhDRARIsAHgRm4-XUDMhhVNyHXb3s1gY4ZBzORr_d9Se-buhJwy7asyUe7YdqEA11eEaAt6UEALw_wcB&gclsrc=aw.ds&nclid=BxjBlpBQsX6pjSHh-L8YYSU77EpfXRkG1AGMB5Wbeu386ykspfrPDnfx_DdFau20)
+15. Website Name: [Dell](https://www.dell.com/en-in/shop/deals/laptop-deals?gacd=10415953-9016-5761040-285981356-0&dgc=ST&gclid=Cj0KCQjwguGYBhDRARIsAHgRm4-XUDMhhVNyHXb3s1gY4ZBzORr_d9Se-buhJwy7asyUe7YdqEA11eEaAt6UEALw_wcB&gclsrc=aw.ds&nclid=BxjBlpBQsX6pjSHh-L8YYSU77EpfXRkG1AGMB5Wbeu386ykspfrPDnfx_DdFau20)
 
 ### Topics
 
@@ -265,7 +329,7 @@ Target the top description and change “Matching developers with great companie
 
 ![Output](./Pic29.png)
 
-16. Webiste Name: [Vercel](https://vercel.com/)
+16. Website Name: [Vercel](https://vercel.com/)
 
 ### Topics
 
@@ -283,7 +347,7 @@ Target the top description and change “Matching developers with great companie
 
 ![Output](./Pic31.png)
 
-17. Webiste Name: [Sony](https://www.sony.co.in/)
+17. Website Name: [Sony](https://www.sony.co.in/)
 
 ### Topics
 
@@ -301,7 +365,7 @@ Target the top description and change “Matching developers with great companie
 
 ![Output](./Pic32.png)
 
-18. Webiste Name: [Philips](https://www.philips.co.in/)
+18. Website Name: [Philips](https://www.philips.co.in/)
 
 ### Topics
 
@@ -319,7 +383,7 @@ Target the top description and change “Matching developers with great companie
 
 ![Output](./Pic35.png)
 
-19. Webiste Name: [Canon](https://in.canon/)
+19. Website Name: [Canon](https://in.canon/)
 
 ### Topics
 
@@ -337,7 +401,7 @@ Target the top description and change “Matching developers with great companie
 
 ![Output](./Pic37.png)
 
-20. Webiste Name: [Oppo](https://www.oppo.com/in/)
+20. Website Name: [Oppo](https://www.oppo.com/in/)
 
 ### Topics
 
