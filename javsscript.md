@@ -185,6 +185,13 @@ search.addEventListener("mouseover", colorRed);
 
 ![Output](./Pic13.png)
 
+## Answer
+```
+document.getElementById("top-nav-search-input").setAttribute("value", "hi" );
+document.getElementsByClassName("button action has-icon search-button")[0].click()
+```
+<hr>
+
 8. Website Name: [Google](https://www.google.com/)
 
 ### Topics
@@ -202,6 +209,12 @@ search.addEventListener("mouseover", colorRed);
 ### Output
 
 ![Output](./Pic15.png)
+
+## Answer
+```
+
+```
+<hr>
 
 9. Website Name: [Code Wars](https://www.codewars.com/)
 
@@ -221,6 +234,15 @@ search.addEventListener("mouseover", colorRed);
 
 ![Output](./Pic17.png)
 
+## Answer
+```
+document.getElementsByClassName("display-heading-1")[0].style.fontFamily = "monospace"
+
+document.getElementsByClassName("display-heading-1")[0].style.color = "Red"
+
+```
+<hr>
+
 10. Website Name: [Freecodecamp](https://www.freecodecamp.org/)
 
 ### Topics
@@ -238,6 +260,19 @@ search.addEventListener("mouseover", colorRed);
 ### Output
 
 ![Output](./Pic19.png)
+
+## Answer
+```
+const button = document.getElementsByClassName("login-btn-text")[1];
+
+const changeColor = () =>{
+    button.style.backgroundColor = "Red";
+}
+
+button.addEventListener("mouseover", changeColor);
+
+```
+<hr>
 
 11. Website Name: [realme](https://www.realme.com/in/)
 
@@ -257,6 +292,13 @@ search.addEventListener("mouseover", colorRed);
 
 ![Output](./Pic21.png)
 
+## Answer
+```
+document.getElementsByClassName("icon icon-logo in")[0].style.backgroundImage = "url('https://account.ineuron.ai/static/images/ineuron-logo.png')";
+
+```
+<hr>
+
 12. Website Name: [Github](https://github.com/)
 
 ### Topics
@@ -274,6 +316,13 @@ search.addEventListener("mouseover", colorRed);
 ### Output
 
 ![Output](./Pic23.png)
+
+## Answer
+```
+document.getElementsByClassName("btn btn-sm btn-primary")[0].style.backgroundColor = "blue";
+
+```
+<hr>
 
 13. Website Name: [Hackerrank](https://www.hackerrank.com/)
 
@@ -293,6 +342,13 @@ Target the top description and change “Matching developers with great companie
 
 ![Output](./Pic25.png)
 
+## Answer
+```
+document.getElementsByClassName("fl-heading-text")[0].innerText = "JS Bootcamp"
+
+```
+<hr>
+
 14. Website Name: [Asus](https://www.asus.com/in/)
 
 ### Topics
@@ -310,6 +366,12 @@ Target the top description and change “Matching developers with great companie
 ### Output
 
 ![Output](./Pic27.png)
+
+## Answer
+```
+document.getElementsByClassName("HotDealsAll__Heading__2fIbe")[0].style.fontSize = "80px"
+```
+<hr>
 
 15. Website Name: [Dell](https://www.dell.com/en-in/shop/deals/laptop-deals?gacd=10415953-9016-5761040-285981356-0&dgc=ST&gclid=Cj0KCQjwguGYBhDRARIsAHgRm4-XUDMhhVNyHXb3s1gY4ZBzORr_d9Se-buhJwy7asyUe7YdqEA11eEaAt6UEALw_wcB&gclsrc=aw.ds&nclid=BxjBlpBQsX6pjSHh-L8YYSU77EpfXRkG1AGMB5Wbeu386ykspfrPDnfx_DdFau20)
 
@@ -329,6 +391,12 @@ Target the top description and change “Matching developers with great companie
 
 ![Output](./Pic29.png)
 
+## Answer
+```
+
+```
+<hr>
+
 16. Website Name: [Vercel](https://vercel.com/)
 
 ### Topics
@@ -347,7 +415,13 @@ Target the top description and change “Matching developers with great companie
 
 ![Output](./Pic31.png)
 
-17. Website Name: [Sony](https://www.sony.co.in/)
+## Answer
+```
+document.getElementsByClassName("section-title_title__VEDfK")[0].innerHTML = "Start with Scratch"
+```
+<hr>
+
+17. Website Name: [Sony](https://www.sony.co.in/electronics/televisions/x90k-x93k-x94k-series?cpint=homepage_whats_hot-What%27s%20Hot-en_IN-responsivegrid_structure_top_whtshot_1)
 
 ### Topics
 
@@ -364,6 +438,14 @@ Target the top description and change “Matching developers with great companie
 ### Output
 
 ![Output](./Pic32.png)
+
+## Answer
+```
+const button = document.getElementsByClassName("btn btn-large btn-block buy buy-button retailer_btn-align")[0]
+
+button.innerHTML = new Date()
+```
+<hr>
 
 18. Website Name: [Philips](https://www.philips.co.in/)
 
@@ -383,6 +465,13 @@ Target the top description and change “Matching developers with great companie
 
 ![Output](./Pic35.png)
 
+## Answer
+```
+document.getElementsByClassName("p-f03-footer-container ")[0].style.background = "none";
+document.getElementsByClassName("p-f03-footer-container ")[0].style.backgroundColor = "orange"
+```
+<hr>
+
 19. Website Name: [Canon](https://in.canon/)
 
 ### Topics
@@ -401,6 +490,12 @@ Target the top description and change “Matching developers with great companie
 
 ![Output](./Pic37.png)
 
+## Answer
+```
+document.getElementsByClassName("logo")[0].getAttribute("src")
+```
+<hr>
+
 20. Website Name: [Oppo](https://www.oppo.com/in/)
 
 ### Topics
@@ -418,3 +513,13 @@ Target the top description and change “Matching developers with great companie
 ### Output
 
 ![Output](./Pic39.png)
+
+## Answer
+```
+const desc = document.getElementsByClassName("desc")
+
+for (let i=0; i<desc.length; i++){
+    desc[i].style.color = "orange";
+}
+```
+<hr>
